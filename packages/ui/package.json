@@ -1,0 +1,27 @@
+{
+  "name": "@khulnasoft/getapp",
+  "version": "0.26.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "stylelint src/**/*.scss",
+    "format": "stylelint --fix src/**/*.scss",
+    "build": "sass --style=compressed --load-path=../../node_modules src/_index.scss:dist/getapp-ui.css",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@khulnasoft/getapp-icons": "*",
+    "normalize.css": "^8.0.1",
+    "the-new-css-reset": "^1.11.2"
+  },
+  "devDependencies": {
+    "stylelint": "^14.9.1",
+    "stylelint-config-standard-scss": "^4.0.0"
+  },
+  "main": "dist/getapp-ui.css",
+  "style": "dist/getapp-ui.css",
+  "jsdelivr": "dist/getapp-ui.css",
+  "unpkg": "dist/getapp-ui.css"
+}

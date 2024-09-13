@@ -1,0 +1,23 @@
+{
+  "name": "@khulnasoft/getapp-kitchensink",
+  "version": "0.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "format": "prettier --write \"**/*.{html,css,js}\"",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@khulnasoft/fonts": "*",
+    "@khulnasoft/getapp": "0.26.0",
+    "@khulnasoft/getapp-icons": "0.26.0",
+    "vite-plugin-handlebars": "^1.6.0"
+  }
+}

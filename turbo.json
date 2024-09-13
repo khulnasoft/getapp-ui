@@ -1,0 +1,32 @@
+{
+    "$schema": "https://turborepo.org/schema.json",
+    "pipeline": {
+        "build": {
+            "cache": false,
+            "dependsOn": [
+                "^build"
+            ]
+        },
+        "test": {
+            "dependsOn": [
+                "^build"
+            ]
+        },
+        "dev": {
+            "persistent": true,
+            "cache": false,
+            "dependsOn": [
+                "@khulnasoft/getapp-icons#build"
+            ]
+        },
+        "lint": {
+            "cache": false
+        },
+        "format": {
+            "cache": false
+        },
+        "clean": {
+            "cache": false
+        }
+    }
+}

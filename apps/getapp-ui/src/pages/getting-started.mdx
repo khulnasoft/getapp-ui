@@ -1,0 +1,94 @@
+---
+title: Getting Started
+description: Getapp-ui Design is GetApp's open-source design system for building consistent and reusable user interfaces. Follow the steps below to start building with Getapp-ui Design.
+---
+
+import { highlight } from "../helpers/code.ts";
+import CodePreview from "@components/CodePreview.svelte";
+
+## CDN
+
+<section class="common-section">
+    <div class="u-padding-inline-32">
+        <ol class="order-list u-margin-block-start-32">
+            <li class="order-list-item">
+                <div class="order-list-content">
+                    <div>
+                        <h3 class="u-bold">Include the CSS library in your project</h3>
+                        <p>
+                            Copy the following code into the `<head>` section of your HTML file.
+                        </p>
+                    </div>
+                </div>
+                <div
+                class="box u-stretch u-margin-inline-start-16"
+                style="padding: 1rem; padding-right: 2.5rem;">
+                    <CodePreview
+                        client:load
+                        code={`<link rel="stylesheet" href="https://unpkg.com/@khulnasoft/getapp">
+                        <!-- optionally, add icons -->
+                        <link rel="stylesheet" href="https://unpkg.com/@khulnasoft/getapp-icons">`}
+                        language="html"
+                        lineNumbers
+                    />
+                </div>
+            </li>
+        </ol>
+    </div>
+
+</section>
+
+## NPM
+
+<section class="common-section">
+    <div class="u-padding-inline-32">
+        <ol class="order-list u-margin-block-start-32">
+
+            <li class="order-list-item">
+                <div class="order-list-content">
+                    <div>
+                        <h3 class="u-bold">Install the CSS library</h3>
+                        <p>
+                            Run the following command to install Getapp-ui Design as an NPM package.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="box u-stretch u-margin-inline-start-16" style="padding: 1rem; padding-right: 2.5rem;">
+                    <CodePreview
+                        client:load
+                        code={`npm install "@khulnasoft/getapp"`}
+                    />
+                </div>
+            </li>
+
+
+            <li class="order-list-item">
+                <div class="order-list-content">
+                <div>
+                    <h3 class="u-bold">Include the library in your project</h3>
+                    <p>
+                        After installing Getapp-ui Design as a package, it will be added to the `node_modules` directory of your project. Include Getapp-ui Design as CSS library by importing it in your JavaScript files.
+                    </p>
+                </div>
+                </div>
+
+
+                <div class="box u-stretch u-margin-inline-start-16" style="padding: 1rem; padding-right: 2.5rem;">
+                    {/* TODO: Fix multi-line code */}
+                    <CodePreview
+                        client:load
+                        code={`import "@khulnasoft/getapp";
+                        // optionally, add icons
+                        import "@khulnasoft/getapp-icons";
+                        `}
+                        language="javascript"
+                        lineNumbers
+                    />
+                </div>
+            </li>
+        </ol>
+
+    </div>
+
+</section>
