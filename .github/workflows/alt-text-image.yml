@@ -1,5 +1,6 @@
 name: Accessibility-alt-text-bot
 on: 
+  workflow_dispatch:
   issues:
     types: [opened, edited]
   pull_request:
